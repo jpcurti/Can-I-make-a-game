@@ -6,13 +6,49 @@ using UnityEngine.XR;
 
 public class HandPresence : MonoBehaviour
 {
+    public bool showController = false;
     public InputDeviceCharacteristics controllerCharacteristics;
     public List<GameObject> controllerPrefabs;
     private InputDevice targetDevice;
     private GameObject spawnedController;
+    public GameObject handModelPrefab;
+    private GameObject spawnedHandModel;
+    private Animator handAnimator;
 
     // Start is called before the first frame update
     void Start()
+    {
+        tryInitialize();
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        if (!targetDevice.isValid)
+        {
+            tryInitialize();
+        }
+        else
+        {
+            if (showController)
+            {
+                spawnedController.SetActive(true);
+                spawnedHandModel.SetActive(false);
+                ControllerButtonScan();
+            }
+            else
+            {
+                spawnedController.SetActive(false);
+                spawnedHandModel.SetActive(true);
+                updateHandAnimation();
+            }
+        }
+
+      
+
+    }
+
+    void tryInitialize()
     {
         List<InputDevice> devices = new List<InputDevice>();
         InputDevices.GetDevicesWithCharacteristics(controllerCharacteristics, devices);
@@ -35,13 +71,38 @@ public class HandPresence : MonoBehaviour
                 Debug.LogError("Did not find controller model. A default model for the controller will be automatically set.");
                 spawnedController = Instantiate(controllerPrefabs.Find(controller => controller.name == "Default Controller"), transform);
             }
+
+            spawnedHandModel = Instantiate(handModelPrefab, transform);
+            handAnimator = spawnedHandModel.GetComponent<Animator>();
+
         }
     }
 
-    // Update is called once per frame
-    void Update()
+    void updateHandAnimation()
     {
+        if (targetDevice.TryGetFeatureValue(CommonUsages.trigger, out float triggerValue))
+        {
+            handAnimator.SetFloat("Trigger", triggerValue);
+        }
+        else
+        {
+            handAnimator.SetFloat("Trigger", 0);
+        }
+        if (targetDevice.TryGetFeatureValue(CommonUsages.grip, out float gripValue))
+        {
+            handAnimator.SetFloat("Grip", gripValue);
+        }
+        else
+        {
+            handAnimator.SetFloat("Grip", 0);
+        }
 
+
+
+    }
+
+    void ControllerButtonScan()
+    {
         if (targetDevice.TryGetFeatureValue(CommonUsages.primaryButton, out bool primaryButtonValue) && primaryButtonValue)
         {
             Debug.Log("Primary Button pressed!");
@@ -56,6 +117,5 @@ public class HandPresence : MonoBehaviour
         {
             Debug.Log("Analog Button pressed with value x= " + primary2DAxisValue.x + " y=" + primary2DAxisValue.y);
         }
-
     }
 }

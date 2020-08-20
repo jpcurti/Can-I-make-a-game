@@ -7,3 +7,4 @@
  As I am unsure on what I want to make in the end and as I have no experience with C#, take it easy when checking this project regarding best practices on the framework and language.
 
 ![Opsie](img/gamewindow.PNG?raw=true "Well....")
+![Opsie](img/gameplay.gif?raw=true "Something works")

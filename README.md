@@ -1,10 +1,30 @@
-# Can I make a game?
- First try with Unity3D and VR.
+# Corona Lockdown Project: What is necessary to create a VR game? ~~I have absolutely no idea.~~
+First try with Unity3D, Blender and VR.
 
- What is necessary to create a VR game? I have absolutely no idea.
- This is a repository for my first try on Unity 3D + Oculus VR Headset following a tutorial series called "Introduction to VR in Unity" (https://www.youtube.com/watch?v=gGYtahQjmWQ&t=3s).
+This is a repository for my first try on Unity 3D [V2020.1](https://store.unity.com/#plans-individual) + Oculus Quest VR Headset following a tutorial series called [Introduction to VR in Unity](https://www.youtube.com/watch?v=gGYtahQjmWQ&t=3s) and Blender [V2.8.3](https://www.blender.org/download/Blender2.83/blender-2.83.5-windows64.msi/).
  
  As I am unsure on what I want to make in the end and as I have no experience with C#, take it easy when checking this project regarding best practices on the framework and language.
 
 ![Opsie](img/gamewindow.PNG?raw=true "Well....")
+
+**Tasks for the game Base:**
+- [x] Configure Project and create a plane and 3d scene objects
+- [x] Configure user Input and XR Controller component + hand presence
+- [x] Make a teleportation system
+- [ ] Implement Continuous movement (or at least camera movement)
+- [ ] Grab Interaction
+- [ ] Ray Interaction
+
+
+**Tasks for the game design:** 
+- [X] Install a 3d Modelling SW such as blender and check some turorial like [this](https://www.youtube.com/watch?v=CIB5BrLgk68)
+- [ ] Make a simple model and import it to Unity like [this](https://www.youtube.com/watch?v=X8hHSBYGiJs)
+- [ ] Animate a model and import it to Unity
+- [ ] Haven't gone so far yet so what is the point here :)
+
+**Progress Preview**
+
 ![Opsie](img/gameplay.gif?raw=true "Something works")
+
+**Cloning instructions:**
+As the live preview (game window on Unity) using the Oculus quest is only possible with oculus link compatible platforms, this project will be done on a windows (w10-1909) machine. However it can be cloned into a Linux machine (The game can only be tested generating an .apk in this case).

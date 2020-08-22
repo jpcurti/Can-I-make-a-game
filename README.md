@@ -11,7 +11,7 @@ This is a repository for my first try on Unity 3D [V2020.1](https://store.unity.
 - [x] Configure Project and create a plane and 3d scene objects
 - [x] Configure user Input and XR Controller component + hand presence
 - [x] Make a teleportation system
-- [ ] Implement Continuous movement (or at least camera movement)
+- [x] Implement Continuous movement, camera snap and gravity falling
 - [ ] Grab Interaction
 - [ ] Ray Interaction
 

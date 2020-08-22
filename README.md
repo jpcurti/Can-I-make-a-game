@@ -12,7 +12,7 @@ This is a repository for my first try on Unity 3D [V2020.1](https://store.unity.
 - [x] Configure user Input and XR Controller component + hand presence
 - [x] Make a teleportation system
 - [x] Implement Continuous movement, camera snap and gravity falling
-- [ ] Grab Interaction
+- [x] Grab Interaction
 - [ ] Ray Interaction
 
 

@@ -5,7 +5,11 @@ This is a repository for my first try on Unity 3D [V2020.1](https://store.unity.
  
  As I am unsure on what I want to make in the end and as I have no experience with C#, take it easy when checking this project regarding best practices on the framework and language.
 
+**What is looks like in Unity:**
 ![Opsie](img/gamewindow.PNG?raw=true "Well....")
+
+**and Blender:**
+![Opsie](img/blendercake.png?raw=true "Well....")
 
 **Tasks for the game Base:**
 - [x] Configure Project and create a plane and 3d scene objects
@@ -18,7 +22,7 @@ This is a repository for my first try on Unity 3D [V2020.1](https://store.unity.
 
 **Tasks for the game design:** 
 - [X] Install a 3d Modelling SW such as blender and check some turorial like [this](https://www.youtube.com/watch?v=CIB5BrLgk68)
-- [ ] Make a simple model and import it to Unity like [this](https://www.youtube.com/watch?v=X8hHSBYGiJs)
+- [X] Make a simple model and import it to Unity like [this](https://www.youtube.com/watch?v=X8hHSBYGiJs) ~~The cake is a lie~~
 - [ ] Animate a model and import it to Unity
 - [ ] Haven't gone so far yet so what is the point here :)
 

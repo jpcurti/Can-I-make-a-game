@@ -3,11 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 public class LocomotionController : MonoBehaviour
-{
+{   
+     
     public XRController rightTeleportRay;
     private XRRayInteractor rightRayInteractor;
     public InputHelpers.Button teleportActivationButton;
     public float activationThreshold = 0.1f;
+    public bool enableRightTeleport { get; set; } = true;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,7 +24,7 @@ public class LocomotionController : MonoBehaviour
         if (rightTeleportRay)
         {
             rightRayInteractor.allowSelect = checkIfActivated(rightTeleportRay);
-            rightTeleportRay.gameObject.SetActive(checkIfActivated(rightTeleportRay));
+            rightTeleportRay.gameObject.SetActive(enableRightTeleport && checkIfActivated(rightTeleportRay));
         }
         
     }
@@ -31,5 +33,7 @@ public class LocomotionController : MonoBehaviour
         InputHelpers.IsPressed(controller.inputDevice, teleportActivationButton, out bool isActivated, activationThreshold);
         return isActivated;
     }
+
+ 
 
 }

@@ -373,9 +373,41 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.87424296
       objectReference: {fileID: 0}
+    - target: {fileID: -7275576542656464307, guid: c506f9f803113d04e9b5f823b06617f5, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -2885462494750660430, guid: c506f9f803113d04e9b5f823b06617f5, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -2412542256879268552, guid: c506f9f803113d04e9b5f823b06617f5, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -1997190210111949622, guid: c506f9f803113d04e9b5f823b06617f5, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -1049372925609106262, guid: c506f9f803113d04e9b5f823b06617f5, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: c506f9f803113d04e9b5f823b06617f5, type: 3}
       propertyPath: m_Name
       value: Beretta
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c506f9f803113d04e9b5f823b06617f5, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7396317713519948449, guid: c506f9f803113d04e9b5f823b06617f5, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7880317810542098601, guid: c506f9f803113d04e9b5f823b06617f5, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c506f9f803113d04e9b5f823b06617f5, type: 3}
@@ -958,9 +990,37 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -5568371526223589888, guid: a4b5191280abff54bb6e9b7bd0b02bd4, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -5117700066308340382, guid: a4b5191280abff54bb6e9b7bd0b02bd4, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 117214286460000749, guid: a4b5191280abff54bb6e9b7bd0b02bd4, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: a4b5191280abff54bb6e9b7bd0b02bd4, type: 3}
       propertyPath: m_Name
       value: blender_sword
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a4b5191280abff54bb6e9b7bd0b02bd4, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5148817236446094103, guid: a4b5191280abff54bb6e9b7bd0b02bd4, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6507901977716847365, guid: a4b5191280abff54bb6e9b7bd0b02bd4, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8513859187771203891, guid: a4b5191280abff54bb6e9b7bd0b02bd4, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a4b5191280abff54bb6e9b7bd0b02bd4, type: 3}
@@ -1096,7 +1156,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 260777757}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pivot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8454,7 +8514,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1313252496}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pivot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8580,7 +8640,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1381981144}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pivot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8613,7 +8673,7 @@ GameObject:
   - component: {fileID: 1452909134}
   - component: {fileID: 1452909133}
   - component: {fileID: 1452909132}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8893,7 +8953,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1692242016}
   - component: {fileID: 1692242017}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Audio Source
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9510,7 +9570,7 @@ GameObject:
   - component: {fileID: 1250996983}
   - component: {fileID: 1250996982}
   - component: {fileID: 919132148258934694}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BlenderCake
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9612,7 +9672,7 @@ GameObject:
   - component: {fileID: 6645823805549160645}
   - component: {fileID: 5366159434922511025}
   - component: {fileID: 7202271455897257003}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9630,7 +9690,7 @@ GameObject:
   - component: {fileID: 3001287387534310462}
   - component: {fileID: 7276645280392181083}
   - component: {fileID: 8611550621498397676}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Blender Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9692,7 +9752,7 @@ GameObject:
   - component: {fileID: 7108978527145211514}
   - component: {fileID: 1511331013461544353}
   - component: {fileID: 488671678049008264}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: icing.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9814,7 +9874,7 @@ GameObject:
   - component: {fileID: 6738450969282797605}
   - component: {fileID: 4109396431639274213}
   - component: {fileID: 7071182762188888654}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}

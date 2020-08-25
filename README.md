@@ -1,4 +1,4 @@
-# Corona Lockdown Project: What is necessary to create a VR game? ~~I have absolutely no idea.~~
+# Lockdown Project: What is necessary to create a VR game?
 First try with Unity3D, Blender and VR.
 
 This is a repository for my first try on Unity 3D [V2020.1](https://store.unity.com/#plans-individual) + Oculus Quest VR Headset following a tutorial series called [Introduction to VR in Unity](https://www.youtube.com/watch?v=gGYtahQjmWQ&t=3s) and Blender [V2.8.3](https://www.blender.org/download/Blender2.83/blender-2.83.5-windows64.msi/).

@@ -16,8 +16,8 @@ public class BulletShooting : MonoBehaviour
     // Update is called once per frame
     public void Fire()
     {
-        Quaternion bulletRotation = Quaternion.Euler(barrel.position.x+90, barrel.position.y, barrel.position.z);
-        GameObject spawnedBullet = Instantiate(bullet, barrel.position, bulletRotation);
+        //Quaternion bulletRotation = Quaternion.Euler(barrel.position.x+90, barrel.position.y, barrel.position.z);
+        GameObject spawnedBullet = Instantiate(bullet, barrel.position, barrel.rotation);
         spawnedBullet.GetComponent<Rigidbody>().velocity = speed * barrel.forward;
         audioSource.PlayOneShot(audioClip);
         Destroy(spawnedBullet, 5);

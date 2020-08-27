@@ -9,8 +9,7 @@ public class BulletShooting : MonoBehaviour
     public Transform barrel;
     public AudioSource audioSource;
     public AudioClip audioClip;
-       
-    // Start is called before the first frame update
+    public float shootVolume { get; set; } = 1.0f;
    
 
     // Update is called once per frame
@@ -19,7 +18,7 @@ public class BulletShooting : MonoBehaviour
         //Quaternion bulletRotation = Quaternion.Euler(barrel.position.x+90, barrel.position.y, barrel.position.z);
         GameObject spawnedBullet = Instantiate(bullet, barrel.position, barrel.rotation);
         spawnedBullet.GetComponent<Rigidbody>().velocity = speed * barrel.forward;
-        audioSource.PlayOneShot(audioClip);
+        audioSource.PlayOneShot(audioClip, shootVolume);
         Destroy(spawnedBullet, 5);
     }
 

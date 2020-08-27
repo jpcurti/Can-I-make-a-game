@@ -10,6 +10,8 @@ public class LocomotionController : MonoBehaviour
     public InputHelpers.Button teleportActivationButton;
     public float activationThreshold = 0.1f;
     public bool enableRightTeleport { get; set; } = true;
+
+ 
     // Start is called before the first frame update
     void Start()
     {

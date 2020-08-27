@@ -14,7 +14,7 @@ This is a repository for my first try on Unity 3D [V2020.1](https://store.unity.
 ![Opsie](img/gamewindow.PNG?raw=true "Well....")
 
 **and Blender:**
-![Opsie](img/blenderwell.png?raw=true "Well....")
+![Opsie](img/blenderwell.PNG?raw=true "Well....")
 
 **Tasks for the game Base:**
 - [x] Configure Project and create a plane and 3d scene objects

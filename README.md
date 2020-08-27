@@ -23,7 +23,7 @@ This is a repository for my first try on Unity 3D [V2020.1](https://store.unity.
 - [x] Implement Continuous movement, camera snap and gravity falling
 - [x] Grab Interaction
 - [X] Ray Interaction
-- [ ] GUI to interact with the user somehow (maybe a menu to control some overall settings)
+- [X] GUI to interact with the user somehow (maybe a menu to control some overall settings)
 
 
 **Tasks for the game design:** 

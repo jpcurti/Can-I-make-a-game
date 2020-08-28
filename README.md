@@ -24,6 +24,10 @@ This is a repository for my first try on Unity 3D [V2020.1](https://store.unity.
 - [x] Grab Interaction
 - [X] Ray Interaction
 - [X] GUI to interact with the user somehow (maybe a menu to control some overall settings)
+- [ ] Bledner-> Unity: UV Unwrapping & baking texture
+- [ ] Snap position
+- [ ] Two hands handling
+
 
 
 **Tasks for the game design:** 

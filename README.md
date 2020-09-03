@@ -14,7 +14,7 @@ This is a repository for my first try on Unity 3D [V2020.1](https://store.unity.
 ![Opsie](img/gamewindow.PNG?raw=true "Well....")
 
 **and Blender:**
-![Opsie](img/blenderwell.PNG?raw=true "Well....")
+![Opsie](img/blendertarget.PNG?raw=true "Well....")
 
 **Tasks for the game Base:**
 - [x] Configure Project and create a plane and 3d scene objects
@@ -34,7 +34,7 @@ This is a repository for my first try on Unity 3D [V2020.1](https://store.unity.
 - [X] Install a 3d Modelling SW such as blender and check some turorial like [this](https://www.youtube.com/watch?v=CIB5BrLgk68)
 - [X] Make a simple model and import it to Unity like [this](https://www.youtube.com/watch?v=X8hHSBYGiJs) 
 - [X] Figure it out why some materials look ugly in unity (?) and deal with texture/ material baking (?) like shown [here](https://www.youtube.com/watch?v=-9cuTjOBbiM)
-- [ ] Animate a model and import it to Unity
+- [X] Animate a model and import it to Unity (Awesome and realistic bow animations /s)
 - [ ] Haven't gone so far yet so what is the point here :)
 
 

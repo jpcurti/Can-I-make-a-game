@@ -13,9 +13,11 @@ public class BowShooting : MonoBehaviour
     public Transform bowPivot; 
     float m_LastPressTime=0.5f;
     float m_PressDelay = 0.5f;
+    public AudioSource audioSource;
+    public AudioClip audioClip;
 
-   
-       
+
+
     void Start()
     {
         tryInitialize();
@@ -78,6 +80,7 @@ public class BowShooting : MonoBehaviour
             m_LastPressTime = Time.unscaledTime;
             GameObject spawnedarrow = Instantiate(arrow, bowPivot.position, bowPivot.rotation);
             spawnedarrow.GetComponent<Rigidbody>().velocity = speed * bowPivot.forward;
+            audioSource.PlayOneShot(audioClip, audioSource.volume);
             Destroy(spawnedarrow, 5);
         }    
        

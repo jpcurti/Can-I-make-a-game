@@ -94,7 +94,7 @@ public class BowShooting : MonoBehaviour
             spawnedarrow.GetComponent<Rigidbody>().velocity = speed * bowPivot.forward;
             audioSource.PlayOneShot(stringRelease, audioSource.volume);
             
-            Destroy(spawnedarrow, 5);
+            //Destroy(spawnedarrow, 5);
         }    
        
     }

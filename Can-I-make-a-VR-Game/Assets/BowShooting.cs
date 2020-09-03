@@ -14,8 +14,9 @@ public class BowShooting : MonoBehaviour
     float m_LastPressTime=0.5f;
     float m_PressDelay = 0.5f;
     public AudioSource audioSource;
-    public AudioClip audioClip;
-
+    public AudioClip stringRelease;
+    public AudioClip stringPull;
+    private bool stringPullDelay = true;
 
 
     void Start()
@@ -48,7 +49,18 @@ public class BowShooting : MonoBehaviour
         if (targetDevice.TryGetFeatureValue(CommonUsages.trigger, out float triggerValue) )
         {
             bowAnimator.SetFloat("Arming", triggerValue);
-            
+
+            if (triggerValue > 0.4 && !stringPullDelay)
+            {
+                stringPullDelay = true;
+                audioSource.PlayOneShot(stringPull, audioSource.volume/2);
+                
+            }
+            else if(triggerValue <0.1)
+            {
+                stringPullDelay = false;
+            }
+
             if (triggerValue > 0.95  )
             {   
                 
@@ -80,7 +92,8 @@ public class BowShooting : MonoBehaviour
             m_LastPressTime = Time.unscaledTime;
             GameObject spawnedarrow = Instantiate(arrow, bowPivot.position, bowPivot.rotation);
             spawnedarrow.GetComponent<Rigidbody>().velocity = speed * bowPivot.forward;
-            audioSource.PlayOneShot(audioClip, audioSource.volume);
+            audioSource.PlayOneShot(stringRelease, audioSource.volume);
+            
             Destroy(spawnedarrow, 5);
         }    
        
